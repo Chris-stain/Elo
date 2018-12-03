@@ -1,0 +1,245 @@
+
+.info {
+	background:#333;
+}
+body {
+  font-family: 'Didact Gothic';
+  color: $c9c1ac;
+}
+.primary-color {
+	color: white;
+}
+.info h2 {
+	word-spacing: 0.6rem;
+}
+.info a {
+	transition: color 0.5s ease-in-out;
+}
+.info a:hover {
+	color: black;
+}
+/* header section */
+
+#header {
+	min-height: calc(100vh - 94px);
+	background-image: url(eloPic.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.height-90 {
+	min-height: calc(100vh - 94px);
+}
+.banner h1 {
+	border-top: 6px solid white;
+	border-bottom: 6px solid white;
+	animation: fromLeft;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft {
+0%{
+	transform: translateX(-100px);
+	opacity: 0;
+}
+50%{
+	transform: translateX(30px);
+}
+100%{
+	transform: translateX(0);
+	opacity: 1;
+}
+}
+
+.main-btn {
+	color: blue;
+	font-size: 2rem;
+	border: 2px solid blue;
+	transition: all 1s ease-in-out;
+}
+.main-btn:hover {
+	color: gray;
+	border: 2px solid black;
+	background: white;
+}
+.elo-btn {
+	animation: fromRight;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fromRight {
+0%{
+	transform: translateX(100px);
+	opacity: 0;
+}
+50%{
+	transform: translateX(-30px);
+}
+100%{
+	transform: translateX(0);
+	opacity: 1;
+}
+}
+.header-link {
+	display: inline-block;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	background: blue;
+	border-radius: 10px;
+	transition: all 2s ease;
+	animation: fromBottom;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+.header-link:hover {
+	color: #242424;
+}
+@keyframes fromBottom{
+	0%{
+		transform: translateY(-10px);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(-10px);
+	}
+}
+/* navbar */
+.navbar {
+	background-color: #c9c1ac;
+	padding: 20px 20px;
+	transition: all 1s ease;
+
+}
+.navbar-background {
+	padding: 5px 20px;
+}
+.navbar-brand{
+	font-size: 20px;
+	transition: all 1s ease;
+}
+.navbar-brand:hover {
+	color: black;
+}
+.nav-link {
+	color: black;
+	text-decoration: none;
+	transition: all 2s ease;
+	font-size: 23px;
+}
+.nav-link:hover {
+	color: blue;
+
+}
+.nav-btn {
+	background: transparent;
+	color: black;
+	border: 2px solid black;
+	font-size: 23px;
+	transition: all 2s ease;
+}
+.nav-btn:hover {
+	color: blue;
+	border: 2px solid blue;
+}
+/* toggler*/
+
+.toggler-btn{
+	border: 20px solid black;
+	padding: 5px;
+	transition: all 2s ease;
+}
+.bar {
+	width: 30px;
+	height: 3px;
+	margin: 5px;
+	background: gray;
+	transition: all 0.5s ease;
+}
+
+.change .bar1{
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar2{
+	opacity: 0;
+}
+.change .bar3{
+	transform: rotate(45deg) translate(-5px, -8px);
+}
+
+
+
+/*reviews section*/
+
+.review-img {
+	width: 150px;
+}
+.review-item{
+	background: #333;
+	/*clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%);*/
+}
+
+/*contact sign up section */
+
+.height-60 {
+	min-height: 60vh;
+}
+
+#contact .card{
+	background: black;
+	transition: all 2s ease;
+}
+#contact .card:hover{
+	background: blue;
+}
+
+#contact .card-header {
+	color: gray;
+}
+
+#contact .input-group-text {
+	background: gray;
+	border-color: gray;
+	color: blue;
+}
+
+#contact .card input{
+	color: #333;
+}
+#contact .card input::placeholder{
+	color: #333;
+}
+
+.contact-btn{
+	color: #333;
+	border-color: black;
+	background: transparent;
+	transition: all 2s ease-in-out;
+}
+.contact-btn:hover{
+	background: #c9c1ac;
+	color: black;
+	border-color: blue;
+}
+
+/*footer*/
+#back-to-top {
+	background: blue;
+	border-radius: 10px;
+	display:inline-block;
+}
+.scrollTop {
+	position: fixed;
+	bottom: 70px;
+	right: 10px;
+}
