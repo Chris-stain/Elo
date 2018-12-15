@@ -28,7 +28,11 @@ var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
 
 
 
-
+//$(function(){
+//       $(".login-form").hide();
+//       $(".register-form").show();
+//       $(".card-header h1").html("Sign Up");
+//      });
 
 
 
@@ -3754,3 +3758,22 @@ function bootstrap() {
 bunker(bootstrap);
 
 }());
+
+
+$(function(){
+       $(".login-form").hide();
+       $(".register-form").show();
+       $(".card-header h1").html("Sign Up");
+      });
+
+function showLoginForm() {
+   $(".login-form").show();
+   $(".register-form").hide();
+   $(".card-header h1").html("Log In");
+}
+
+function showRegisterForm() { 
+   $(".login-form").hide();
+   $(".register-form").show();
+   $(".card-header h1").html("Sign Up");
+}
