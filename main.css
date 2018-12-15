@@ -212,6 +212,15 @@ body {
     display: none;
 }
 
+#pickups  {
+    display: none;
+    font-size: 25px;
+}
+
+#pickups h1{
+    font-size: 25px;
+}
+
 /*footer*/
 #back-to-top {
 	background: blue;

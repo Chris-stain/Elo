@@ -1,3 +1,4 @@
+//This method is called when a user clicks the 'Request' button
 function locations() {
     var x = document.getElementById("spots");
     if (x.style.display === "block") {
@@ -6,8 +7,10 @@ function locations() {
         x.style.display = "block";
     }
 }
+
+//This method is called when a user clicks the 'PickUp' button
 function picked() {
-    var x = document.getElementById("spots");
+    var x = document.getElementById("pickups");
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
@@ -28,37 +31,5 @@ function info(location) {
         else
              x.style.display = "none";
     })
-//        if (x.style.display === "block") {
-//           ;
-//        } else {
-//            x.style.display = "block";
-//        }
+       
 }
-//}
-//function info2() {
-//     var x = document.getElementById("state");
-//    if (x.style.display === "block") {
-//        x.style.display = "none";
-//    } else {
-//        x.style.display = "block";
-//    }
-//    
-//}
-//function info3() {
-//     var x = document.getElementById("east");
-//    if (x.style.display === "block") {
-//        x.style.display = "none";
-//    } else {
-//        x.style.display = "block";
-//    }
-//    
-//}
-//function info4() {
-//     var x = document.getElementById("ag");
-//    if (x.style.display === "block") {
-//        x.style.display = "none";
-//    } else {
-//        x.style.display = "block";
-//    }
-//    
-//}
