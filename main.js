@@ -19,7 +19,7 @@ function picked() {
 }
 
 
-
+// This method is called when a user clicks on a parking lot option
 function info(location) {
     var locations = ["nutwood", "state", "east", "ag"]
 //   var x = document.getElementById(location);
