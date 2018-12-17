@@ -6,6 +6,14 @@ function locations() {
     } else {
         x.style.display = "block";
     }
+    
+    var y = document.getElementById("pickups");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+    
 }
 
 //This method is called when a user clicks the 'PickUp' button
@@ -16,6 +24,14 @@ function picked() {
     } else {
         x.style.display = "block";
     }
+    
+    var y = document.getElementById("spots");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+    
 }
 
 
