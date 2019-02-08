@@ -200,6 +200,8 @@ body {
 }
 
 
+/*request-form btn-group main-btn elo-btn my-4 text-capitalize */
+
 #spots {
     display: none;
     font-size: 22px;
@@ -207,6 +209,22 @@ body {
 
 .request-form {
     display: none;
+    font-size: 21px;
+}
+
+#nutwood h1 {
+    font-size: 21px;
+}
+
+#state h1{
+    font-size: 21px;
+}
+
+#east h1{
+    font-size: 21px;
+}
+
+#ag h1 {
     font-size: 21px;
 }
 
